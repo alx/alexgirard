@@ -111,6 +111,10 @@ ul.posts {
     color: black;
   }
 
+  .site .title img {
+    border:0;
+  }
+
   .site .meta {
     color: #aaa;
   }
