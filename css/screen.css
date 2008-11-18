@@ -183,6 +183,10 @@ ul.posts {
     background-color: #333;
   }
 
+  #post li {
+	margin-left: 20px;
+  }
+
 #related {
   margin-top: 2em;
 }
