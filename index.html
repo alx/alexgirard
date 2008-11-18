@@ -1,0 +1,26 @@
+---
+layout: default
+title: Alex Girard
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <h1>Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="http://www.feevy.com">Feevy:</a> Dynamic blogroll on your blog with a simple js tag (<a href="http://github.com/alx/feevy/">source</a>)</li>
+    <li><a href="http://rfeedreader.rubyforge.org">rFeedReader:</a> Ruby feed parser, extract latest posts from any rss/atom feed, used on Feevy.com (<a href="http://github.com/alx/rfeedreader/">source</a>)</li>
+    <li><a href="http://rfeedfinder.rubyforge.org">rFeedFinder:</a> Ruby feed finder, discover rss/atom feed link on any webpage, used on Feevy.com (<a href="http://github.com/alx/rfeedfinder/">source</a>)</li>
+    <li><a href="http://openid.alexgirard.com">Openid-Server:</a> All-in-one PHP package to install an OpenId server on your server (<a href="http://github.com/alx/openid-server/">source</a>)</li>
+    <li><a href="http://bookmark.alexgirard.com">Pressmark:</a> Social bookmarking, Delicious clone, with Wordpress CMS (<a href="http://github.com/alx/pressmark/">source</a>)</li>
+    <li><a href="http://arduino.cc">Arduino.tmbundle:</a> Textmate Bundle to make and upload programs to Arduino electronic board (<a href="http://github.com/alx/arduino.tmbundle/">source</a>)</li>
+	<li><a href="http://bbvablogs.com">Blogsfera:</a> Customized Wordpress-Mu in Spanish, with useful plugins and themes installed by default (<a href="http://github.com/alx/blogsfera/">source</a>)</li>
+	<!-- <li><a href="http://barceloneta.fr">Barceloneta:</a> Blog-shop for Sandra (<a href="http://github.com/alx/barceloneta/">source</a>)</li> -->
+	<!-- <li><a href="http://douceoffensive.org">Douce Offensive:</a> Photoblog of Guillaume Ajavon (<a href="http://github.com/alx/douce-offensive/">source</a>)</li> -->
+  </ul>
+</div>

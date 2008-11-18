@@ -1,0 +1,10 @@
+---
+layout: post
+title: Post Title
+---
+
+h1. {{ page.title }}
+
+p(meta). 18 Nov 2008 - City
+
+2008 is a leap year.
