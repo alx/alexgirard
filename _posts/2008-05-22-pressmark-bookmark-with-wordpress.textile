@@ -26,9 +26,9 @@ If you feel like adding your own modification to the code, you can clone/fork th
 * Import from bigger social-bookmark accounts (delicious, magnolia, ...)
 * Cross-blogging to decentralized bookmark management in various blog spaces
 
-h3. Installation
+*Installation*
 
-* Get Pressmark sources:
+* Get Pressmark source code:
 ** "Download it from Github":http://github.com/alx/pressmark/tarball/master
 ** If you've got git installed, clone it from Github (to easily get last updated): _git clone git://github.com/alx/pressmark.git pressmark_
 * Move the source to your webserver, ask a geek how to do it if you don't know :)
