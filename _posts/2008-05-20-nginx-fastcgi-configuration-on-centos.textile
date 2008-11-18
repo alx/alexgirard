@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Nginx] FastCGI configuration on CentOS
+title: FastCGI configuration with Nginx on CentOS
 ---
 
 h1. {{ page.title }}

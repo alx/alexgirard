@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Pressmark] Social Bookmarks with Wordpress
+title: Social Bookmarking with Wordpress
 ---
 
 h1. {{ page.title }}
