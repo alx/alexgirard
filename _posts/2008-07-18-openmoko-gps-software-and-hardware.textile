@@ -22,7 +22,7 @@ People have tested it, it works for many, but there's still some phones that don
 
 h2. Hardware solution
 
-This morning, the OpenMoko hardware team published their "hardware solution":http://www.openmoko.org/wiki/Image:Gta02_gps_10pf_rework_sop.pdf:
+This morning, the OpenMoko hardware team published their "hardware solution":http://www.openmoko.org/wiki/Image:Gta02_gps_10pf_rework_sop.pdf
 
 _Soldering a 10pF capacitor between PIN5 and PIN6 at SD card slot without taking off the case as the below picture showed._
 

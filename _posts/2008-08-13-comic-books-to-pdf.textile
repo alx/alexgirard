@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comic bBooks to PDF
+title: Comic Books to PDF
 ---
 
 h1. {{ page.title }}
