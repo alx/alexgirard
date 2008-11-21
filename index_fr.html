@@ -13,7 +13,7 @@ title: Alex Girard
 		<li style="float:right;"><a onclick="$('#posts_{{ i + 1 }}').show()">plus d'articles</a></li>
 		</span><span id='posts_{{ i }}' style='display:none;'>"
 	  {% endif %}
-	  {% i++ %}
+	  {% assign i = i + 1 %}
 	{% endfor %}
 	</span>
 	<li><a href="http://blog.alexgirard.com">plus sur l'ancien blog</a></li>
