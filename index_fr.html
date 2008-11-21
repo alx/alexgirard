@@ -6,24 +6,9 @@ title: Alex Girard
 <div id="home">
   <h1>Articles récents</h1>
   <ul class="posts">
-	{% for post in site.posts limit:10 %}
+	{% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
-	
-	<li style="float:right;"><a onclick="$('#posts_0').show()">plus d'articles</a></li>
-	</span><span id='posts_0' style='display:none;'>
-		{% for post in site.posts limit:10 offset:20 %}
-	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</span>
-	
-	<li style="float:right;"><a onclick="$('#posts_0').show()">plus d'articles</a></li>
-	</span><span id='posts_0' style='display:none;'>
-		{% for post in site.posts limit:10 offset:30 %}
-	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</span>
-	
 	<li><a href="http://blog.alexgirard.com">plus sur l'ancien blog</a></li>
   </ul>
   
