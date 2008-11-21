@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DouceOffensive.org nouvelle espoir
+title: DouceOffensive.org nouvel espoir
 ---
 
 h1. {{ page.title }}
