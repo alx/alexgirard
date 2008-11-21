@@ -30,7 +30,8 @@ h2. Le Routeur Merb
 
 Exemple d'une route customisée:
 
-@
+<pre>
+<code>
 Merb::Router.prepare do
 	match(:domain => "mydomain.com") do
 		match("/this-article", :method => "get").
@@ -38,20 +39,24 @@ Merb::Router.prepare do
 		# another route
 	end
 end		
-@
+</code>
+</pre>
 
 Résolution du problème de sous-domaine:
 
-@
+<pre>
+<code>
 	match(:subdomain => /(.*)/).
 	to(account => "subdomain[1]") do
 		#application routes here
 end		
-@
+</code>
+</pre>
 
 _defer_to_ ajouter une couche logique dans le routeur:
 
-@
+<pre>
+<code>
 match("/articles/:url").defer_to |request, param|
 
 	if article = Article.first(:url => params[:url])
@@ -67,11 +72,13 @@ match("/articles/:url").defer_to |request, param|
 	end
 	
 end
-@
+</code>
+</pre>
 
 Dans la lib des slices, on peut rajouter facilement des routes au routeur:
 
-@
+<pre>
+<code>
 # Setup routes inside the host application
 #
 # @param scope<Merb::Router::Behaviour>
@@ -87,7 +94,8 @@ def self.setup_router(scope)
   scope.match("/login", :method => :put ).to(:controller => "sessions",     :action => "update"         ).name(:perform_login)
   scope.match("/logout"                 ).to(:controller => "sessions",     :action => "destroy"        ).name(:logout)
 end
-@
+</code>
+</pre>
 
 h2. Projets à suivre
 
