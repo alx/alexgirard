@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initiation a Merb
+title: Initiation à Merb
 ---
 
 h1. {{ page.title }}
