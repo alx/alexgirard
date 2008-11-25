@@ -27,9 +27,13 @@ h3. L'utilisateur récupére une backup
 * L'utilisateur télécharge le fichier xml de backup lié a un blog
 * L'utilisteur se déconnecte
 
+h2. Extensions
+
+*Versionning*: l'application passer automatiquement sur les blog pour récuperer les dernières mises à jours. Un système de versionning permettra à l'utilisateur de récupérer des backup de diverses dates.
+
 h2. Limitations
 
 * Des plugins de backup existent déjà: le but de l'application est de fournir une interface simple sans installation de la part de l'utilisateur.
 * Seulement compatible avec Wordpress: l'application doit Être facilement extensible à d'autre systèmes de blog, soit par xml-rpc, soit par RSS.
-* Peu de personnes sont concernés: très bien pour un démarrage, mon appli se limitera à la dizaine de blog que je dois sauvegarder.
-* Restauration sans fichier: depuis l'interface d'importation de Wordpress, l'utilisateur peut directement saisir l'url lié à sa sauvegarde, Wordpress se chargera de récupérer les données directement depuis le serveur de sauvegarde
+* Peu de personnes sont concernés: très bien pour un démarrage, mon application se limitera à la dizaine de blog que je dois sauvegarder.
+* Restauration sans fichier: si disponible dans le blog de l'utilisateur, l'utilisateur peut directement saisir une url disponible dans l'application, liée à sa sauvegarde, et l'application communiquera la backup en xml-rpc au blog.
