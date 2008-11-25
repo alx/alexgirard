@@ -1,0 +1,35 @@
+---
+layout: post
+title: Web-app de Blog Backup
+---
+
+Dans l'idée de me faire la main sur le framework "Merb":http://merbivore.com, il  a des dizaine de concept qui me viennent à l'esprit.
+
+Afin d'allier l'utile à l'agréable, et pour pouvoir me soulager d'un manque, je pense développer une interface de backup de blog. Beaucoup de mes projets utilisent en effet Wordpress comme gestionnaire de contenu (CMS), mais il me manque la sécurité de ne pas voir disparaître toute les données dans un crash d'une machine ou une mauvaise manipulation sur les bases de données.
+
+h2. Définition de l'application
+
+L'application de backup de blog est une application en ligne qui permet aux utilisateurs enregistrés d'ajouter un blog et de récuperer une backup de ce blog à n'importe quel moment.
+
+h2. Fonctionnement de l'application
+
+h3. L'utilisateur sauvegarde son blog
+
+* L'utilisateur crée un compte et se connecte
+* L'utilisateur ajoute l'adresse de son blog dans son compte
+	* Si nécessaire, on lui demandera les données de connexion pour xml-rpc
+	* Si xml-rpc n'est pas disponible, alors les backup se feront a partir du fil RSS
+* L'utilisteur se déconnecte
+
+h3. L'utilisateur récupére une backup
+
+* L'utilisateur se connecte à son compte
+* L'utilisateur télécharge le fichier xml de backup lié a un blog
+* L'utilisteur se déconnecte
+
+h2. Limitations
+
+* Des plugins de backup existent déjà: le but de l'application est de fournir une interface simple sans installation de la part de l'utilisateur.
+* Seulement compatible avec Wordpress: l'application doit Être facilement extensible à d'autre systèmes de blog, soit par xml-rpc, soit par RSS.
+* Peu de personnes sont concernés: très bien pour un démarrage, mon appli se limitera à la dizaine de blog que je dois sauvegarder.
+* Restauration sans fichier: depuis l'interface d'importation de Wordpress, l'utilisateur peut directement saisir l'url lié à sa sauvegarde, Wordpress se chargera de récupérer les données directement depuis le serveur de sauvegarde
