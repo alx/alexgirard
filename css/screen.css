@@ -27,11 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 15px;
-  color: #999;
   font-family: Arial, Verdana, sans-serif;
-  font-weight: 300;
-  background-color: #fff;
+  font-size:20px;
+  font-weight:normal;
+  margin:30px 0px 10px 0px;
 }
 h3 {
   color: #c55;
