@@ -5,7 +5,7 @@ title: Easy Wordpress upgrade with Git
 
 Wordpress has released its new version 2.7 few days ago, and since all my blogs are now controlled with Git behind, here is the way to do it quickly and easyly.
 
-You might take care not to have modified anything in the Wordpress Core files or in _/wp-content/themes/default_ as these changes ill be crushed during the copy.
+You might take care not to have modified anything in the Wordpress Core files (like _wp-includes_) or in _/wp-content/themes/default_ as these changes will be crushed during the copy.
 
 * "Download Wordpress":http://wordpress.org/latest.zip
 * Uncompress the archive on your computer, e.g. ~/Download/wordpress/
