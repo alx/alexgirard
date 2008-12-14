@@ -19,7 +19,7 @@ The git part:
 
 Now, connect to your blog server, by ssh:
 
-* *ssh username@your-blog-hosting.com*
+* _ssh username@your-blog-hosting.com_
 * Move to your blog folder in your server, it should already be a git clone: _cd my-blog-clone_
 * Retrieve the changes from the git server: _git pull_
 
