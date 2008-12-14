@@ -8,7 +8,7 @@ Wordpress has released its new version 2.7 few days ago, and since all my blogs 
 You might take care not to have modified anything in the Wordpress Core files or in _/wp-content/themes/default_ as these changes ill be crushed during the copy.
 
 * "Download Wordpress":http://wordpress.org/latest.zip
-* Uncompress the archive on your computer, e.g. ~/Download/wordpress/*
+* Uncompress the archive on your computer, e.g. ~/Download/wordpress/
 * Copy the files from the new Wordpress to your local git clone: _cp -r ~/Download/wordpress/* ~/my-blog-clone/_
 
 The git part:
