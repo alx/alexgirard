@@ -8,20 +8,19 @@ Wordpress has released its new version 2.7 few days ago, and since all my blogs 
 You might take care not to have modified anything in the Wordpress Core files or in _/wp-content/themes/default_ as these changes ill be crushed during the copy.
 
 * "Download Wordpress":http://wordpress.org/latest.zip
-* Uncompress the archive on your computer
-* Go to the local git clone you have of your blog: *cd ~/my_blog*
-* Copy the files from the new Wordpress: *cp -r ~/Download/wordpress .*
+* Uncompress the archive on your computer, e.g. ~/Download/wordpress/*
+* Copy the files from the new Wordpress to your local git clone: _cp -r ~/Download/wordpress/* ~/my_blog_clone/_
 
 The git part:
 
-* Add the new files in your local git clone: *git add .*
-* Commit the upgrade locally: *git commit -a -m "upgrade to new wordpress"*
-* Push the changes to your git server: *git push*
+* Add the new files in your local git clone: _git add ._
+* Commit the upgrade locally: _git commit -a -m "upgrade to new wordpress"_
+* Push the changes to your git server: _git push_
 
 Now, connect to your blog server, by ssh:
 
 * *ssh username@your-blog-hosting.com*
-* Move to your blog folder in your server, it should already be a git clone: *cd my_blog*
-* Retrieve the changes from the git server: *git pull*
+* Move to your blog folder in your server, it should already be a git clone: _cd my_blog_clone_
+* Retrieve the changes from the git server: _git pull_
 
 You just have to upgrade your blog database now, going to: _http://your-blog.com/wp-admin/upgrade.php_
