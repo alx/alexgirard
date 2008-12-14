@@ -9,7 +9,7 @@ You might take care not to have modified anything in the Wordpress Core files or
 
 * "Download Wordpress":http://wordpress.org/latest.zip
 * Uncompress the archive on your computer, e.g. ~/Download/wordpress/*
-* Copy the files from the new Wordpress to your local git clone: _cp -r ~/Download/wordpress/* ~/my_blog_clone/_
+* Copy the files from the new Wordpress to your local git clone: _cp -r ~/Download/wordpress/* ~/my-blog-clone/_
 
 The git part:
 
@@ -20,7 +20,7 @@ The git part:
 Now, connect to your blog server, by ssh:
 
 * *ssh username@your-blog-hosting.com*
-* Move to your blog folder in your server, it should already be a git clone: _cd my_blog_clone_
+* Move to your blog folder in your server, it should already be a git clone: _cd my-blog-clone_
 * Retrieve the changes from the git server: _git pull_
 
 You just have to upgrade your blog database now, going to: _http://your-blog.com/wp-admin/upgrade.php_
