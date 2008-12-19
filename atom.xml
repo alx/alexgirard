@@ -1,14 +1,15 @@
 ---
 layout: nil
+reference: alexgirard.com
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Alex Girard Feed</title>
- <link href="http://alexgirard.com/atom.xml" rel="self"/>
- <link href="http://alexgirard.com/"/>
+ <link href="http://{{ page.reference }}/atom.xml" rel="self"/>
+ <link href="http://{{ page.reference }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://alexgirard.com/</id>
+ <id>http://{{ page.reference }}</id>
  <author>
    <name>Alex Girard</name>
    <email>alx.girard@gmail.com</email>
@@ -17,9 +18,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://alexgirard.com{{ post.url }}"/>
+   <link href="http://{{ page.reference }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://alexgirard.com{{ post.id }}</id>
+   <id>http://{{ page.reference }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

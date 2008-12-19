@@ -1,11 +1,12 @@
 ---
 layout: nil
+reference: alexgirard.com
 ---
 <?xml version="1.0"?>
 <rss version="2.0">
   <channel>
     <title>Alex Girard Feed</title>
-    <link>http://alexgirard.com/</link>
+    <link>http://{{ page.reference }}</link>
     <description>Alex Girard</description>
     <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
@@ -14,8 +15,8 @@ layout: nil
 	{% for post in site.posts limit:10 %}
  	<item>
    		<title>{{ post.title }}</title>
-   		<link>http://alexgirard.com{{ post.url }}</link>
-   		<guid>http://alexgirard.com{{ post.id }}</guid>
+   		<link>http://{{ page.reference }}{{ post.url }}</link>
+   		<guid>http://{{ page.reference }}{{ post.id }}</guid>
    		<description>{{ post.content | xml_escape }}</description>
    		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
  	</item>
