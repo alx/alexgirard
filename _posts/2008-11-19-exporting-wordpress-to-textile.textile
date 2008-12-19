@@ -7,7 +7,7 @@ h1. {{ page.title }}
 
 p(meta). 19 Nov 2008 - Toulouse
 
-After moving to "Jekyll and Git blogging":http://alexgirard.com/2008/11/18/using-git-to-blog.html yesterday, I fougt a bit to retrieve my old post from "my current Wordpress blog":http://blog.alexgirard.com inside this new blog.
+After moving to "Jekyll and Git blogging":/2008/11/18/using-git-to-blog.html yesterday, I fougt a bit to retrieve my old post from "my current Wordpress blog":http://blog.alexgirard.com inside this new blog.
 
 A bit of copy/paste and googling later, here is a simple script to read your Wordpress export file, and extract a textile file for each post it contains.
 
