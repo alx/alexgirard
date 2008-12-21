@@ -1,0 +1,145 @@
+---
+layout: post
+title: 25C3 - My remote lecture program
+---
+
+h1. {{ page.title }}
+
+p(meta). 21 Dec 2008 - Toulouse
+
+2 years ago, I was visiting Christine in Berlin for Christmas, and it was a surprise to discover than the CCC was doing its "23rd conference":https://events.ccc.de/congress/2006-static/static/2/3/r/23rd_Chaos_Communication_Congress_7c1f.html at the same time, it has always been a hacker group orbiting in my sphere of ideas ("Blinkenlights":http://www.blinkenlights.net/, ...). Since then, I've followed most of their events (and other hacker conferences too: "HOPE"http://www.thelasthope.org/, "What The Hack":http://whatthehack.org/, "DEFCON":http://www.defcon.org/, ...) online and in real life (CCC Summer Camp 2007), it's still the main gate to catch a lot of technical and sociological essays on the net.
+
+The next "25C3":https://events.ccc.de/congress/2008/ is starting on the 27th of December, and as usual to prepare my remote assistance, here is a list of lectures that would be nice to follow:
+
+h2. Day 1 (2008-12-27)
+
+h3. "Opening Session":http://events.ccc.de/congress/2008/Fahrplan/events/3025.en.html
+
+The starting speech, it might not be the most intersting, but it's well propared and generally resume nicely the theme of the conference: *Nothing to Hide*
+
+h3. "Solar-powering your Geek Gear":http://events.ccc.de/congress/2008/Fahrplan/events/2904.en.html
+
+Green technologies already in used and that will surely become versatile in next years, probably some important information to catch inside to keep in touch with this technology.
+
+h3. "Security Failures in Smart Card Payment Systems":http://events.ccc.de/congress/2008/Fahrplan/events/2953.en.html
+
+Another vector of attack on pin-cards, like most of credit cards in Europe now that simple signature are being replaced in most countries. Keep in touc with this skill to know the limits of the pin code security.
+
+h3. "About Cyborgs and Gargoyles ...":http://events.ccc.de/congress/2008/Fahrplan/events/2892.en.html
+
+Wearable computing, getting some idea to implement solutions like "Arduino LilyPad":http://www.arduino.cc/en/Main/ArduinoBoardLilyPad in some projects ("Barceloneta.fr":http://barceloneta.fr, "orlandooo-things":http://www.orlandooo-things.net/, ...).
+
+h3. "Building an international movement: hackerspaces.org":http://events.ccc.de/congress/2008/Fahrplan/events/2806.en.html
+
+Hacker Spaces are spreading all over the world, it could be seen starting in 2007, and 2008 have just made them grow on an international scale with some collaboration between them. Group meeting to inspire new spaces on smaller scale and decentralized nodes.
+
+h3. "Terrorist All-Stars":http://events.ccc.de/congress/2008/Fahrplan/events/2991.en.html
+
+Not planned in the description of the lecture, but really in touch with french news. From my favorite speaker of last year, Anne Roth, who gave a lecture nammed "Wha is terrorism?":http://events.ccc.de/congress/2007/Fahrplan/events/2381.en.html explaining her situation since her friend is in german jail after being cought as a terrorist.
+It'll surely be the lecture I'll look for the most on the first day.
+
+h3. "Just Estonia and Georgia?":http://events.ccc.de/congress/2008/Fahrplan/events/2988.en.html
+
+Cyber-warfare in cluster conflicts, interesting information to follow next small conflict that'll depend on the capicity of countries to stay in touch with IT part of the conflict they're in.
+
+h3. "Hacking the iPhone":http://events.ccc.de/congress/2008/Fahrplan/events/2976.en.html
+
+A lecture by the "iphone-dev":http://www.iphone-dev.org/ team, it could have been the hackers with the biggest impact on mainstream technology this years, and with their history, they'll probably have some more information to share about the iPhone platform.
+
+h3. "Beyond Asimov - Laws for Robots":http://events.ccc.de/congress/2008/Fahrplan/events/2815.en.html
+
+Society talk about future technologies and robots, to follow.
+
+h3. "Collapsing the European security architecture":http://events.ccc.de/congress/2008/Fahrplan/events/2669.en.html
+
+Where is Europe going about technological and security issues? To keep in touch with actual EU legislation about these issues.
+
+h3. "Messing Around with Garage Doors":http://events.ccc.de/congress/2008/Fahrplan/events/3030.en.html
+
+Some fun stuff with remote key and cloning tehcnologies.
+
+h2. Day 2 (2008-12-28)
+
+h3. "Embracing Post-Privacy":http://events.ccc.de/congress/2008/Fahrplan/events/2979.en.html
+
+I always like this privacy talks because they're the best place to grasp the real privacy issue we've now with all-facebook-flickr-youtube internet, and to get some inspiring direction about where to go and kind-of protect ourselves.
+
+h3. "Hacking the Atmosphere":http://events.ccc.de/congress/2008/Fahrplan/events/2940.en.html
+
+A hacker in the sky trying to enhance hi way to fly, inspirationnal for the development of UAV projects.
+
+h3. "Anatomy of smartphone hardware":http://events.ccc.de/congress/2008/Fahrplan/events/3008.en.html
+
+Centered on "OpenMoko Freerunner":http://openmoko.org, a way to follow how the new mobile platforms are made from an hardware point of view.
+
+h3. "The Trust Situation":http://events.ccc.de/congress/2008/Fahrplan/events/2665.en.html
+
+Another society talk on privacy, trust, and surveillance, I'll be looking to know why people doesn't seem to get the idea that it's important ot protect some information, and break their trust network without realising it.
+
+h3. "Scalable Swarm Robotics":http://events.ccc.de/congress/2008/Fahrplan/events/2890.en.html
+
+P2P robotic project, just for fun.
+
+h3. "Rapid Prototype Your Life":http://events.ccc.de/congress/2008/Fahrplan/events/3015.en.html
+
+I'm looking for this lecture on the second day. By "Bre Pettis":http://brepettis.com/, a "Make: Magazine":http://make.com editor, speaking about the ways to quickly manufacture prototype useful for you only. The movement has started a few years ago, and now that pinting and cutting technologies becomes easily available, it's just matter of creative spirit to build your own stuffs.
+
+h3. "Banking Malware 101":http://events.ccc.de/congress/2008/Fahrplan/events/3020.en.html
+
+A view of current botnet threat, to keep in touch.
+
+h3. "The Infinite Library":http://events.ccc.de/congress/2008/Fahrplan/events/3020.en.html
+
+Porn pushing another time the limit of internet, to create a new way to store and access gigantic libraries now that there're so much information available.
+
+h3. "Console Hacking 2008: Wii Fail":http://events.ccc.de/congress/2008/Fahrplan/events/2799.en.html
+
+A year after the breah showed on the Wii at 24c3, most information of technics that have been deployed since then.
+
+h3. "Tricks: makes you smile":http://events.ccc.de/congress/2008/Fahrplan/events/2992.en.html
+
+Fun stuff, small tricks to play with web apps.
+
+h3. "Blinkenlights Stereoscope":http://events.ccc.de/congress/2008/Fahrplan/events/2934.en.html
+
+Detils from the last blinkenlights installation in Toronto. State-of-the-art technological installation, get the ideas and mix them in your head for future projects.
+
+h2. Day 3 (2008-12-29)
+
+h3. "Running your own GSM network":http://events.ccc.de/congress/2008/Fahrplan/events/3007.en.html
+
+What's the state of the open-source GSM world? Since the protocol is over-closed, and some tools appears to get nearer to it (like the OpenMoko), it'll be nice to have a point of view of the possibilities.
+
+h3. "Privacy in the social semantic web":http://events.ccc.de/congress/2008/Fahrplan/events/2873.en.html
+
+Mashup ideas about how to use XMPP to build your self-made social network.
+
+h3. "Hacking into Botnets":http://events.ccc.de/congress/2008/Fahrplan/events/3000.en.html
+
+The most obscure network technology from last years, I'm always interested in getting some information about it.
+
+h3. "Objects as Software: The Coming Revolution":http://events.ccc.de/congress/2008/Fahrplan/events/2781.en.html
+
+The most important talk from this 3rd day, about "Reprap":http://reprap.org from "Zach Hoeken":http://www.zachhoeken.com/. It'll surely contain a lot of known information, but with recent explosion of Open-Source Hardware, it'll be its starting point to ppublish ideas in 2009.
+
+h3. "Wikileaks":http://events.ccc.de/congress/2008/Fahrplan/events/2916.en.html
+
+"Wikileaks":https://secure.wikileaks.org/wiki/Wikileaks has been the most interesting source of information these last years, with more inside information than on "Cryptome":http://cryptome.org/ 
+
+h2. Day 4 (2008-12-30)
+
+h3. "Why technology sucks":http://events.ccc.de/congress/2008/Fahrplan/events/3004.en.html
+
+Politics and technology, the bad mix and why we'll see the young fighting the the older generation, that've be been without internet, for a long time.
+
+h3. "La Quadrature du Net - Campaigning on Telecoms Package":http://events.ccc.de/congress/2008/Fahrplan/events/2791.en.html
+
+After the meeting in Utopia Toulouse, it'll be interesting to follow the reaction in a room full of mostly-european hackers.
+
+h3. "Crafting and Hacking: Separated at Birth":http://events.ccc.de/congress/2008/Fahrplan/events/2777.en.html
+
+Hackers love to make things and not only on computers. Following the new community growing and bringing other-than-computer hacks to the world.
+
+h3. "Mining social contacts with active RFID":http://events.ccc.de/congress/2008/Fahrplan/events/2899.en.html
+
+Following the RFID, fun stuff.
