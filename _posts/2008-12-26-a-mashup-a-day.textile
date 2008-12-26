@@ -1,0 +1,27 @@
+---
+layout: post
+title: A Mashup a day keeps the boredom away
+---
+
+Bakc on Twitter after a few months, and on reblog ideas after a few years,
+I wanted to experiment a small mashup to follow 25C3 conference using flickr
+for the pictures and twitter for the news.
+
+It was not long to find a Sinatra project using the Flickr API: 
+"flickr-downloader":http://github.com/foca/flickr-downloader/tree from
+"foca":http://foca.tumblr.com/ ad re-adapt it to fecth vairous information
+from Flickr and send them to the "TwitPic API":http://twitpic.com/api/.
+
+The result:
+
+!/imges/twitpic.png!
+
+It's downloadable and clonable on github:
+"Flickr Twit":http://github.com/alx/flickr-downloader/
+
+It's just and experiment for the weekend, but it surely can be useful in
+recent world events that have primarely happened on twitter: London-Mumbaï
+terrorist attacks, big concert at X-Y site, weddings for a day... or to
+follow a group of flickr artists inside a twitter feed.
+
+Thanks to Noah to have made "TwitPic":http://twitpic.com what it has become.
