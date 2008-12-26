@@ -14,7 +14,7 @@ from Flickr and send them to the "TwitPic API":http://twitpic.com/api/.
 
 The result:
 
-!/imges/twitpic.png!
+!/images/twitpic.png!
 
 It's downloadable and clonable on github:
 "Flickr Twit":http://github.com/alx/flickr-downloader/
