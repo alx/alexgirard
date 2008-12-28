@@ -7,4 +7,4 @@ Une nouvelle traduction en cours de correction est maintenant disponible pour to
 
 !/images/gitbook.png!:http://alexgirard.com/git-book/
 
-Vous y trouverez le "PDF":http://alexgirard.com/git-book/book_fr.pdf et aussi pleins d'erreurs à corriger. Je vous invite à m'envoyer un mail à "alx.girard@gmail.com":mailto:alexgirard@gmail.com avec vos corrections, suggestions, et commentaires; ou à participer au projet en le "forkant sur github":http://github.com/alx/gitbook/tree/french et en travaillant dans la branche _french_ avant de m'envoyer vos _pull-request_.
+Vous y trouverez le "PDF":http://alexgirard.com/git-book/book_fr.pdf et aussi pleins d'erreurs à corriger. Je vous invite à m'envoyer un mail à "alx.girard@gmail.com":mailto:alx.girard@gmail.com avec vos corrections, suggestions, et commentaires; ou à participer au projet en le "forkant sur github":http://github.com/alx/gitbook/tree/french et en travaillant dans la branche _french_ avant de m'envoyer vos _pull-request_.
