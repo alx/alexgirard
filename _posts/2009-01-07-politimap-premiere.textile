@@ -32,11 +32,11 @@ Avec ces données, il ne me manquait plus qu'a situé chacun des sièges. Heureu
 
 Voici l'application qui m'a servie à situer chaque siège:
 
-!/seatmap.png!
+!/images/seatmap.png!
 
 Et enfin, avec l'aide du code de "clickmaps":http://blog.corunet.com/english/the-definitive-heatmap, idéalement disponible en ruby, j'ai put le modifier un petit peu pour analyser cette séance:
 
-!/20090090.jpg!
+!/images/20090090.jpg!
 
 Ce n'est qu'un début, avec du code encore tout poussiéreux, et des idées d'analyses qui peuvent être assez marrante, ou plus sérieusement poussées pour permettre une autre vision de la scène politique encore assez obscure à l'Assemblée.
 
