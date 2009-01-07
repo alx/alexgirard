@@ -7,26 +7,26 @@ Après quelques surprises lors du passage de Jérémie Zimmermann à "Utopia Tou
 
 Sachant que tous les textes, et le fiches de chaque député sont librement accessible sur le site de l'Assemblée, il ne me manquait plus que quelques lignes pour analyser le nombre de prise de parole dans chaque séance. Ainsi, durant la première séance du 8 décembre 2008, évoquant la communication audiovisuelle et le nouveau service public de la télévision, voici le nombre de prise de parole:
 
-58, Noël Mamère - Place: 596
-45, Patrick Bloche - Place: 453
-34, Marcel Rogemont - Place: 479
-30, Patrick Roy - Place: 550
-24, Benoist Apparu - Place: 138
-23, Patrice Martin-Lalande - Place: 125
-23, Jean-François Copé - Place: 99
-22, Patrick Braouezec - Place: 585
-21, Frédéric Lefebvre - Place: 358
-20, Michel Herbillon - Place: 259
-15, Christian Kert - Place: 343
-12, Sandrine Mazetier - Place: 429
-7, Yves Censi - Place: 79
-6, Jean Dionis du Séjour - Place: 397
-5, Dino Cinieri - Place: 196
-4, Richard Dell'Agnola - Place: 357
-4, Richard Mallié - Place: 76
-3, Bruno Le Roux - Place: 421
-2, Françoise de Panafieu - Place: 177
-2, Marietta Karamanli - Place: 559
+58, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/2045.asp'>No&#235;l Mam&#232;re</a> - Place: 596
+45, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/543.asp'>Patrick Bloche</a> - Place: 453
+34, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/2603.asp'>Marcel Rogemont</a> - Place: 479
+30, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/267768.asp'>Patrick Roy</a> - Place: 550
+24, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/333224.asp'>Benoist Apparu</a> - Place: 138
+23, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/2099.asp'>Patrice Martin-Lalande</a> - Place: 125
+23, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/917.asp'>Jean-Fran&#231;ois Cop&#233;</a> - Place: 99
+22, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/653.asp'>Patrick Braouezec</a> - Place: 585
+21, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/346886.asp'>Fr&#233;d&#233;ric Lefebvre</a> - Place: 358
+20, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/1630.asp'>Michel Herbillon</a> - Place: 259
+15, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/1761.asp'>Christian Kert</a> - Place: 343
+12, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/335319.asp'>Sandrine Mazetier</a> - Place: 429
+7, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/267266.asp'>Yves Censi</a> - Place: 79
+6, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/267087.asp'>Jean Dionis du S&#233;jour</a> - Place: 397
+5, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/267429.asp'>Dino Cinieri</a> - Place: 196
+4, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/1058.asp'>Richard Dell&#39;Agnola</a> - Place: 357
+4, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/267719.asp'>Richard Malli&#233;</a> - Place: 76
+3, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/1886.asp'>Bruno Le Roux</a> - Place: 421
+2, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/2319.asp'>Fran&#231;oise de Panafieu</a> - Place: 177
+2, <a href='http://www.assemblee-nationale.fr/13/tribun/fiches_id/335054.asp'>Marietta Karamanli</a> - Place: 559
 
 Avec ces données, il ne me manquait plus qu'a situé chacun des sièges. Heureusement, le "plan de l'hémicycle":http://www.assemblee-nationale.fr/seance/hemicycle.asp est aussi disponible en ligne, et en ajoutant un peu d'interaction grâce à "Shoes":http://shoooes.net/, j'ai rapidement créé un fichier de coordonnées de tous les sièges. (_En passant, j'aimerai maintenant avoir plus d'information sur l'histoire de l'Assemblée, il manque des numéros de sièges, la curiosité me poussera sûrement à répondre à ces manques prochainement._)
 
