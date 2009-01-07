@@ -1,0 +1,43 @@
+---
+layout: post
+title: Politimap, les zones chaudes de l'Assemblée Nationale
+---
+
+Après quelques surprises lors du passage de Jérémie Zimmermann à "Utopia Toulouse":http://www.cinemas-utopia.org/toulouse/ pour présenter le travail de "La Quadrature du Net":http://laquadrature.net, et après m'être rapidement perdu dans une tentative de lecture des texte des sessions de l'Assemblée Nationale, je me suis dit qu'il serait plus marrant de visualiser l'activité de ces sessions sous forme de "heatmap":http://images.google.com/images?q=heatmap.
+
+Sachant que tous les textes, et le fiches de chaque député sont librement accessible sur le site de l'Assemblée, il ne me manquait plus que quelques lignes pour analyser le nombre de prise de parole dans chaque séance. Ainsi, durant la première séance du 8 décembre 2008, évoquant la communication audiovisuelle et le nouveau service public de la télévision, voici le nombre de prise de parole:
+
+58, Noël Mamère - Place: 596
+45, Patrick Bloche - Place: 453
+34, Marcel Rogemont - Place: 479
+30, Patrick Roy - Place: 550
+24, Benoist Apparu - Place: 138
+23, Patrice Martin-Lalande - Place: 125
+23, Jean-François Copé - Place: 99
+22, Patrick Braouezec - Place: 585
+21, Frédéric Lefebvre - Place: 358
+20, Michel Herbillon - Place: 259
+15, Christian Kert - Place: 343
+12, Sandrine Mazetier - Place: 429
+7, Yves Censi - Place: 79
+6, Jean Dionis du Séjour - Place: 397
+5, Dino Cinieri - Place: 196
+4, Richard Dell'Agnola - Place: 357
+4, Richard Mallié - Place: 76
+3, Bruno Le Roux - Place: 421
+2, Françoise de Panafieu - Place: 177
+2, Marietta Karamanli - Place: 559
+
+Avec ces données, il ne me manquait plus qu'a situé chacun des sièges. Heureusement, le "plan de l'hémicycle":http://www.assemblee-nationale.fr/seance/hemicycle.asp est aussi disponible en ligne, et en ajoutant un peu d'interaction grâce à "Shoes":http://shoooes.net/, j'ai rapidement créé un fichier de coordonnées de tous les sièges. (_En passant, j'aimerai maintenant avoir plus d'information sur l'histoire de l'Assemblée, il manque des numéros de sièges, la curiosité me poussera sûrement à répondre à ces manques prochainement._)
+
+Voici l'application qui m'a servie à situer chaque siège:
+
+!/seatmap.png!
+
+Et enfin, avec l'aide du code de "clickmaps":http://blog.corunet.com/english/the-definitive-heatmap, idéalement disponible en ruby, j'ai put le modifier un petit peu pour analyser cette séance:
+
+!/20090090.jpg!
+
+Ce n'est qu'un début, avec du code encore tout poussiéreux, et des idées d'analyses qui peuvent être assez marrante, ou plus sérieusement poussées pour permettre une autre vision de la scène politique encore assez obscure à l'Assemblée.
+
+Vous pouvez télécharger et suivre le développement de cet outils sur "github.com/alx/politimap/":http://github.com/alx/politimap/
