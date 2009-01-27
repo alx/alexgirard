@@ -1,0 +1,10 @@
+---
+layout: post
+title: Ruby and Windows, stupid trick to delete a file
+---
+
+Sometimes, you've to be strong enough to delete a "_permission denied_" file under windows with ruby:
+
+<script src="http://gist.github.com/53396.js"></script>
+
+It doesn't take too long, but that's the kind of stupid trick you can avoid if you choose another platform to make your code.
