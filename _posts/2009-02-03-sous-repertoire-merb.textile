@@ -1,0 +1,59 @@
+---
+layut: post
+title: Merb et rangement de vos classes en sous-répertoire
+---
+
+h1. {{ page.title }}
+
+Petit travail d'un soir: organiser les classes de notre application Merb dans des sous-répertoire.
+
+h2. Problématique
+
+Par défaut, Merb construit ce type d'arborescence:
+
+app
+L__ controllers
+	|__ ...
+	L__ rockets.rb
+L__ models
+	|__ ...
+	L__ rocket.rb
+
+Et pour pas vous embêtez, vous entassez naturellement vos classes jusqu'à trop plein.
+Maintenant, vous voulez ranger vos contrôleurs et modèles de manière plus hiérarchiques:
+
+app
+L__ controllers
+	|__ ...
+	L__ resource
+		|__ ...
+		L__ rockets.rb
+L__ models
+	|__ ...
+	L__ resource
+		|__ ...
+		L__ rocket.rb
+
+h2. Solution
+
+Pour faire ceci, il vous faut d'abord modifier le fichier *config/router.rb*, par exemple pour appeler le contrôleur de la ressource *rocket*:
+
+<pre><code>
+Merb::Router.prepare do |r|
+  
+  r.resources :resource_rockets, :controller => "resource/rockets"
+
+end
+</code></pre>
+
+Vous devez déclarer le module du contrôleur dans *app/controllers/resource/rockets.rb*:
+
+<pre><code>
+module Resource
+  class Rockets < Application
+	...
+  end
+end
+</code></pre>
+
+Pour cette manipulation, il n'y a aucune modifications à apporter au modèle, il vous suffit de le mettre dans son sous-répertoire et il devrait être reconnu.
