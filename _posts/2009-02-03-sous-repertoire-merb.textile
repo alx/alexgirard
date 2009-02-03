@@ -1,5 +1,5 @@
 ---
-layut: post
+layout: post
 title: Merb et rangement de vos classes en sous-répertoire
 ---
 
