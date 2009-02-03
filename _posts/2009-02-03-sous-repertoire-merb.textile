@@ -11,6 +11,7 @@ h2. Problématique
 
 Par défaut, Merb construit ce type d'arborescence:
 
+<pre><code>
 app
 L__ controllers
 	|__ ...
@@ -18,10 +19,12 @@ L__ controllers
 L__ models
 	|__ ...
 	L__ rocket.rb
+</code></pre>
 
 Et pour pas vous embêtez, vous entassez naturellement vos classes jusqu'à trop plein.
 Maintenant, vous voulez ranger vos contrôleurs et modèles de manière plus hiérarchiques:
 
+<pre><code>
 app
 L__ controllers
 	|__ ...
@@ -33,6 +36,7 @@ L__ models
 	L__ resource
 		|__ ...
 		L__ rocket.rb
+</code></pre>
 
 h2. Solution
 
