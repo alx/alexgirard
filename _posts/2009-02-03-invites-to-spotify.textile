@@ -1,0 +1,15 @@
+---
+layout: post
+title: 10 invites to Spotify.com
+---
+
+h1. {{ page.title }}
+
+For those interested, please leave a comment to get an invite on "Spotify.com":http://spotify.com.
+
+It's nothing particular, just a simple iTunes, with a monthly subscription for those who wants to pay, an old music-business concept that some guys have finally put in place.
+
+Thanks to years of music industry battle, we've got this old technology quietly moving in, and it worries me a bit that it'll stll be controlled more by business-spirit than creating a sharing community. On their blog, they've already announced they plan to block some tracks depending on the geographic region, nice way to crash.
+
+Test it, it's simple, you might like it, but it's nothing compared to something like "last.fm":http://last.fm.
+If only there was a subscription (and a better music player) on last.fm, they'd win them all.
