@@ -21,12 +21,12 @@ For this, I've made a special task in *config/deploy.rb*:
 <code>
 namespace :gems do
 
-desc "Update and install media_rocket gem"
-	task :media_rocket do
-		run "cd #{gems_path}/media_rocket/; git pull"
-		sudo "echo" # Allows to run next command as root
-		run "cd #{gems_path}/media_rocket/ && sudo rake install"
-	end
+  desc "Update and install media_rocket gem"
+  task :media_rocket do
+    run "cd #{gems_path}/media_rocket/; git pull"
+    sudo "echo" # Allows to run next command as root
+    run "cd #{gems_path}/media_rocket/ && sudo rake install"
+  end
 
 end	
 </code>
