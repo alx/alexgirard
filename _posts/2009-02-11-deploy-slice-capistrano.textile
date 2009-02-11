@@ -39,6 +39,7 @@ Then you'll need to copy the assets from your Slice to your current application,
 rake slices:media_rocket:copy_assets
 git commit -a -m "add last asset from media_rocket"
 git push
+cap gems:media_rocket
 cap deploy
 </code>
 </pre>
