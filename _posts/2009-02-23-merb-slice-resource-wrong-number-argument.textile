@@ -22,7 +22,7 @@ It begins with the signature of the resource contoller method:
   def create(page)
     @page = Webbastic::Page.new(page)
 	.....
-<code></pre>
+</code></pre>
 
 Someway, the *page* object doesn't pass through - number of argument equals 0 - but you can still access to your parameters with *params* object, modifying the method this way:
 
@@ -31,6 +31,6 @@ Someway, the *page* object doesn't pass through - number of argument equals 0 - 
   def create
     @page = Webbastic::Page.new(params[:page])
 	.....
-<code></pre>
+</code></pre>
 	
 I've post a ticket on Merb dashboard, so this might have another official solution soon: "ticket #1225":http://merb.lighthouseapp.com/projects/7433-merb/tickets/1225-merb-slice-and-resources-wrong-number-of-arguments
