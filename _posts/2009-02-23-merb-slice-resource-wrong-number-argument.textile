@@ -33,4 +33,4 @@ Someway, the *page* object doesn't pass through - number of argument equals 0 - 
 	.....
 <code></pre>
 	
-I've post a ticket on Merb dashboard, so this might have another official solution soon.
+I've post a ticket on Merb dashboard, so this might have another official solution soon: "ticket #1225":http://merb.lighthouseapp.com/projects/7433-merb/tickets/1225-merb-slice-and-resources-wrong-number-of-arguments
