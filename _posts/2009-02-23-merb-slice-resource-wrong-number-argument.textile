@@ -1,0 +1,36 @@
+---
+layout: post
+title: Merb Slice and Resources, wrong number of arguments
+---
+
+h1. {{ page.title }}
+
+<pre><code>
+merb : worker (port 4000) ~ Started request handling: Mon Feb 23 01:08:49 +0100 2009
+merb : worker (port 4000) ~ Routed to: {"format"=>nil, "submit"=>"Create Page", "action"=>"create", "controller"=>"webbastic/pages", "page"=>{"name"=>"home", "site_id"=>"1"}}
+merb : worker (port 4000) ~ Params: {"format"=>nil, "submit"=>"Create Page", "action"=>"create", "controller"=>"webbastic/pages", "page"=>{"name"=>"home", "site_id"=>"1"}}
+merb : worker (port 4000) ~ wrong number of arguments (0 for 1) - (ArgumentError)
+</code></pre>
+
+When using resources in a Merb Slice, you can get this kind of error.
+I still don't know the core of the problem, but I've found how to solve it.
+
+It begins with the signature of the resource contoller method:
+
+<pre><code>
+  # POST /pages
+  def create(page)
+    @page = Webbastic::Page.new(page)
+	.....
+<code></pre>
+
+Someway, the *page* object doesn't pass through - number of argument equals 0 - but you can still access to your parameters with *params* object, modifying the method this way:
+
+<pre><code>
+  # POST /pages
+  def create
+    @page = Webbastic::Page.new(params[:page])
+	.....
+<code></pre>
+	
+I've post a ticket on Merb dashboard, so this might have another official solution soon.
