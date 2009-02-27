@@ -1,0 +1,102 @@
+---
+layout: post
+title: Deploying a Merb app with Capistrano, monit and nginx
+---
+
+h1. {{ page.title }}
+
+For the second time this morning, we've deployed a merb app on a server, and even if it's quite simple once you've got the logic in the head, it's surely necessary to have this little note for future deploys.
+I hope it'll help other merb dev to fill the documentation hole about this process, feel free to complete or debug it in the comments. More documentation about this process is available "on the Merb Open Source Book":http://book.merbist.com/deployment/nginx
+
+!/images/merb_deploy.png!
+
+Let's suppose you all know how to use "Capistrano":http://www.capify.org/, and that your project is already deployed with it, you now want "Nginx":http://wiki.codemongers.com/ to serve request to your merb app.
+
+h2. Nginx
+
+First, you need to configure nginx to act as a proxy to send requests to your merb servers. In _/etc/nginx/conf.d/merb.conf_:
+
+<pre>
+<code>
+upstream merb_app {
+  server 127.0.0.1:4000;
+  server 127.0.0.1:4001;
+}
+</code>
+</pre>
+
+And in _/etc/nginx/sites-enabled/domain.conf_, the most important line is "*proxy_pass http://merb_app;*":
+
+<pre>
+<code>
+server {
+    listen 80;
+    server_name domain.com;
+
+    root /home/deploy/merb_app/current/public;
+
+    access_log /home/deploy/merb_app/shared/log/access.log;
+    error_log /home/deploy/merb_app/shared/log/error.log;
+
+    location / {
+
+      proxy_set_header  X-Real-IP       $remote_addr;
+      proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header  Host            $http_host;
+
+      proxy_redirect false;
+      proxy_max_temp_file_size 0;
+
+      if (-f $request_filename) {
+        break;
+      }
+
+      if (-f $request_filename.html) {
+        rewrite (.*) $1.html break;
+      }
+
+      if (!-f $request_filename) {
+        proxy_pass http://merb_app;
+        break;
+      }
+
+    } # location
+
+} # server
+
+</code>
+</pre>
+
+We surely can merge this 2 files in the same configuration file, but it's just working this way today, let's change it later.
+
+h2. Monit and monit_merb_mpc
+
+Thats the tricky part, you need to start a master merb that'll monitor workers on your app ports.
+
+First, the _/etc/monit.d/domain.monit_ file, that'll be call to start/stop/restart all these processes:
+
+<script src="http://gist.github.com/47691.js"></script>
+
+And the monit_merb_mpc script from "Engine Yard":, the "original":http://pastie.org/333352 was too buggy for our server, so here is a working version:
+
+<script src="http://gist.github.com/46061.js"></script>
+
+It's surely still buggy, and all this long configuration surely will be replaced by a lighter god script that'll at the same time generate and monitor the master/workers processes.
+
+h2. Restart with Capistrano
+
+The easiest part of all, you just need to tell your monit to start/stop/restart the group defined in the monit preferences:
+
+<pre>
+<code>
+namespace :deploy do
+  # Redefine the application server controls to use monit.
+  %W(restart start stop).each do |event|
+    desc "#{event} using Monit"
+    task event, :except => { :no_release => true } do
+      sudo "/usr/sbin/monit -c /etc/monit/monitrc -g #{application} #{event} all"
+    end
+  end
+end
+</code>
+</pre>
