@@ -6,15 +6,15 @@ title: Deploying a Merb app with Capistrano, monit and nginx
 h1. {{ page.title }}
 
 For the second time this morning, we've deployed a merb app on a server, and even if it's quite simple once you've got the logic in the head, it's surely necessary to have this little note for future deploys.
-I hope it'll help other merb dev to fill the documentation hole about this process, feel free to complete or debug it in the comments.
+I hope it'll help other merb dev to fill the documentation hole about this process, feel free to complete or debug it in the comments. More documentation about this process is available "on the Merb Open Source Book":http://book.merbist.com/deployment/nginx
 
 !/images/merb_deploy.png!
 
-Let's suppose you all know how to use "Capistrano":http://www.capify.org/, and that your project is already deployed using it (it's the easiest part to get), you now want "Nginx":http://wiki.codemongers.com/ to serve your merb app.
+Let's suppose you all know how to use "Capistrano":http://www.capify.org/, and that your project is already deployed with it, you now want "Nginx":http://wiki.codemongers.com/ to serve request to your merb app.
 
 h2. Nginx
 
-First, you need to configure nginx, to pass your request to your merb app. In _/etc/nginx/conf.d/merb.conf_:
+First, you need to configure nginx to act as a proxy to send requests to your merb servers. In _/etc/nginx/conf.d/merb.conf_:
 
 <pre>
 <code>
@@ -67,7 +67,7 @@ server {
 </code>
 </pre>
 
-We can merge this 2 files in the same configuration file, it's just working this way today.
+We surely can merge this 2 files in the same configuration file, but it's just working this way today, let's change it later.
 
 h2. Monit and monit_merb_mpc
 
