@@ -8,7 +8,7 @@ h1. {{ page.title }}
 For the second time this morning, we've deployed a merb app on a server, and even if it's quite simple once you've got the logic in the head, it's surely necessary to have this little note for future deploys.
 I hope it'll help other merb dev to fill the documentation hole about this process, feel free to complete or debug it in the comments. More documentation about this process is available "on the Merb Open Source Book":http://book.merbist.com/deployment/nginx
 
-!/images/merb_deploy.png!
+!/images/merb_deploy.jpg!
 
 Let's suppose you all know how to use "Capistrano":http://www.capify.org/, and that your project is already deployed with it, you now want "Nginx":http://wiki.codemongers.com/ to serve request to your merb app.
 
