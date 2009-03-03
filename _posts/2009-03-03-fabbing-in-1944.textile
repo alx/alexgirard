@@ -1,0 +1,12 @@
+---
+layout: post
+title: Fabbing in 1944
+---
+
+h1. {{ page.title }}
+
+Nothing new on the fabbing trends, it seems like Donald duck already got it in 1944:
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/GVZzia3tByY&hl=fr&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GVZzia3tByY&hl=fr&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+Have a look at the fabrication process, it's really similar to what's we have today as fabbing process: a mold, a heater, a customized part to build.
