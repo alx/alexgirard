@@ -23,7 +23,7 @@ Then I found this wonderful "wiki in vesta.homelinux.net":http://vesta.homelinux
 
 Now, it'll save me the photo-diode surely-complicated thing on my first design, and I'll just need to figure out how to demodulate the signal send by this port:
 
-"Les infos sont transmises cycliquement sur la ligne, modulées en ASK à 50kHz, ce qui correspond en gros à : soit aucune tension présente, soit un signal à 50kHz de 10V CC environ. Le 0V équivaut à un 1 logique, le 50kHz à un 0 logique."
+"_Les infos sont transmises cycliquement sur la ligne, modulées en ASK à 50kHz, ce qui correspond en gros à : soit aucune tension présente, soit un signal à 50kHz de 10V CC environ. Le 0V équivaut à un 1 logique, le 50kHz à un 0 logique._"
 
 Thanks to "Luj06":http://www.pobot.org/ on the "french Arduino forum":http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1236111738/0 to have told me about this serial port.
 
