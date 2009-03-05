@@ -15,7 +15,7 @@ h2. Teleinformation
 
 It appears that EDF, the historical french electricity distributor, has alreayd thought about people wanting to retrieve electronically information from their home control panel.
 
-!/images/comtpeur_edf.png!
+!/images/compteur_edf.png!
 
 At the bottom right of this picture, you can see 2 holes named "_Sortie de téléinformation client (unidirectionnelle)_" which is a serial port, with certain specifications, that sends a binary stream of the informations available on the LCD panel.
 
