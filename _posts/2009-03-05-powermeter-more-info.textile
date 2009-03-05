@@ -1,0 +1,47 @@
+---
+layout: post
+title: Arduino PowerMeter, connect and display
+---
+
+h1. {{ page.title }}
+
+48h after the first post about the Arduino PowerMeter, here is a status about the project.
+
+<a href='http://www.pledgie.com/campaigns/3135'><img alt='Click here to lend your support to: Arduino PowerMeter and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/3135.png?skin_name=chrome' border='0' /></a>
+
+The fund raising is going really well, already 50% of the needed funds are here, the first Arduino is virtually connected to the electricity counter!
+
+h2. Teleinformation
+
+It appears that EDF, the historical french electricity distributor, has alreayd thought about people wanting to retrieve electronically information from their home control panel.
+
+!/images/comtpeur_edf.png!
+
+At the bottom right of this picture, you can see 2 holes named "_Sortie de téléinformation client (unidirectionnelle)_" which is a serial port, with certain specifications, that sends a binary stream of the informations available on the LCD panel.
+
+Then I found this wonderful "wiki in vesta.homelinux.net":http://vesta.homelinux.net/mediawiki/index.php/Demodulateur_teleinformation_EDF, with all the code necessary to decrypt this stream, and some even more hard-core experiment connecting a linksys router and sending information on a remote mysql database. Until then, I'm not the only one geekying my time :)
+
+Now, it'll save me the photo-diode surely-complicated thing on my first design, and I'll just need to figure out how to demodulate the signal send by this port:
+
+"Les infos sont transmises cycliquement sur la ligne, modulées en ASK à 50kHz, ce qui correspond en gros à : soit aucune tension présente, soit un signal à 50kHz de 10V CC environ. Le 0V équivaut à un 1 logique, le 50kHz à un 0 logique."
+
+Thanks to "Luj06":http://www.pobot.org/ on the "french Arduino forum":http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1236111738/0 to have told me about this serial port.
+
+h2. Displaying numbers
+
+What's the most versatile technology today to follow a counter during days and weeks?
+
+My answer tonight would be: "*web analytics*"
+
+All the code is there, with "Piwik":http://piwik.org/ as the flagship of the open-source tracking system.
+
+!/images/counter.jpg!
+
+If we compare the counter we've got on our electricity panel, it's like a counter on a webpage during the nineties: a suite of number without more meta information.
+In today's world, this counters has been replaced by web analytics portal: it's far more simple to install it that the previous counter, it gives you a lot of information on a simple glance, and everybody can read it.
+
+So let's experiment this way: _visit_ would be replaced by _watt/hour_ (the small led signal on the counter), and _navigator_ field will serve to record the rate of the _visit_ (full-rate, half-rate).
+
+Surely Piwik will look a bit empty with only the small part of informations, but it'll be a nice framework to start working on, hopefully with easily understable code.
+
+On a side note, I've also got access to "Pachube.com":http://pachube.com beta, so I'll need to send the information there, and retrieving information from it could add another layer in the "electricity analytics" portal: other people are running energy consumption nodes on Pachube, getting their geo-localisation and their energy feeds will bring a nice mix of information that could be shown.
