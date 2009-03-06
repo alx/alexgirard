@@ -1,0 +1,7 @@
+<h1>Current Projects</h1>
+
+<ul class="posts">
+	<li><a href="http://github.com/alx/webbastic">Webbastic</a>: CMS serving static html files using <a href="http://webby.rubyforge.org/tutorial/">Webby</a></li>
+	<li><a href="http://github.com/alx/webbastic">Media Rocket</a>: Merb slice to manage medias</li>
+	<li><a href="http://alexgirard.com/2009/03/05/powermeter-more-info.html">Arduino PowerMeter</a>: Follow your electricity consumption in real time</li>
+</ul>
