@@ -14,13 +14,16 @@ h2. App server
 h3. Monit Configuration
 
 <pre>
-	<code>
-
+<code>
 alx@MacBook ~$ ssh deploy@slice.legodata.com
 deploy@legodata:/etc/nginx$ cd /etc/monit.d/                     
 deploy@legodata:/etc/monit.d$ sudo cp slice2.monit slice3.monit
 deploy@legodata:/etc/monit.d$ sudo nano slice3.monit
+</code>
+</pre>
 
+<pre>
+<code>
 check process slice3_app_master
   with pidfile /home/deploy/legodata/slice3/shared/pids/production-merb.main.pid
   start program = "/home/deploy/bin/monit_merb_mpc slice3 start_master /home/deploy/legodata -c2 -n4004"
@@ -42,11 +45,14 @@ check process slice3_app_4005
   stop program = "/home/deploy/bin/monit_merb_mpc slice3 restart_worker /home/deploy/legodata 4005"
   if totalmem is greater than 80.0 MB for 2 cycles then restart       # eating up memory?
   group slice3.legodata.com
+</code>
+</pre>
 
+<pre>
+<code>
 deploy@legodata:/etc/monit.d$ sudo /etc/init.d/monit restart
 deploy@legodata:/etc/monit.d$ sudo /usr/sbin/monit -c /etc/monit/monitrc status
-
-	</code>
+</code>
 </pre>
 
 More info:
@@ -55,14 +61,16 @@ More info:
 
 h3. Nginx Configuration
 
- <pre>
-	<code>
-
+<pre>
+<code>
 deploy@legodata:~$ cd /etc/nginx/
 deploy@legodata:/etc/nginx$ sudo cp sites-available/slices/slice3.legodata.com sites-enabled/
 deploy@legodata:/etc/nginx$ sudo nano sites-enabled/slice3.legodata.com
+</code>
+</pre>
 
-
+<pre>
+<code>
 upstream slice3 {
   server 127.0.0.1:4004;
   server 127.0.0.1:4005;
@@ -102,43 +110,48 @@ server {
   } # location
 
 } # server
-
-deploy@legodata:/etc/nginx$ sudo /etc/init.d/nginx restart
-
-	</code>
+</code>
 </pre>
+
+<pre>
+<code>
+deploy@legodata:/etc/nginx$ sudo /etc/init.d/nginx restart
+</code>
+</pre>
+
+More info:
+* "Nginx":http://wiki.codemongers.com/
 
 h3. Manual launch for debug
 
- <pre>
-	<code>
-
+<pre>
+<code>
 deploy@legodata:/etc/monit.d$ sudo /usr/local/bin/merb --name slice3_production -d -u deploy -G www-data -a mongrel -L /home/deploy/legodata/slice3/current/log/production.log -e production -m /home/deploy/legodata/slice3/current -c 2 -P '/home/deploy/legodata/slice3/shared/pids/production-merb.%s.pid' -p 4004 -N
-
-	</code>
+</code>
 </pre>
+
+More info:
+* "merb-core/config.rb":http://github.com/wycats/merb/blob/master/merb-core/lib/merb-core/config.rb#L181-181
+
 
 h3. Git repository creation
 
- <pre>
-	<code>
-
+<pre>
+<code>
 alx@MacBook ~$ ssh git@slice.legodata.com
 git@legodata:~$ mkdir cbon.git
 git@legodata:~$ cd cbon.git
 git@legodata:~/cbon.git$ git init
 Initialized empty Git repository in /home/git/cbon.git/.git/
-
-	</code>
+</code>
 </pre>
 
 h2. Dev station
 
 h3. Git workspace creation
 
- <pre>
-	<code>
-
+<pre>
+<code>
 alx@MacBook ~/Sites/cbon[master]$ mkdir cbon
 alx@MacBook ~/Sites/cbon[master]$ cd cbon/
 alx@MacBook ~/Sites/cbon[master]$ git init
@@ -147,26 +160,22 @@ alx@MacBook ~/Sites/cbon[master]$ git add .
 alx@MacBook ~/Sites/cbon[master]$ git commit -a -m "first commit"
 alx@MacBook ~/Sites/cbon[master]$ git remote add origin git@git.legodata.com:cbon.git
 alx@MacBook ~/Sites/cbon[master]$ git push origin master
-
-	</code>
+</code>
 </pre>
 
 h3. Merb app creation
 
- <pre>
-	<code>
-
+<pre>
+<code>
 alx@MacBook ~/Sites/cbon[master]$ merb-gen app .
 alx@MacBook ~/Sites/cbon[master]$ capify .
-
-	</code>
+</code>
 </pre>
 
 h3. Deploy on app server
 
- <pre>
-	<code>
-
+<pre>
+<code>
 alx@MacBook ~/Sites/cbon[master]$ more config/deploy.rb 
 
 set :application_name, 'cbon'
@@ -175,6 +184,5 @@ set :deploy_to, "/home/deploy/legodata/slice3"
 
 alx@MacBook ~/Sites/cbon[master]$ cap deploy:setup
 alx@MacBook ~/Sites/cbon[master]$ cap deploy:cold
-
-	</code>
+</code>
 </pre>
