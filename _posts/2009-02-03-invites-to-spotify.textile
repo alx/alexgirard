@@ -13,3 +13,5 @@ Thanks to years of music industry battle, we've got this old technology quietly 
 
 Test it, it's simple, you might like it, but it's nothing compared to something like "last.fm":http://last.fm.
 If only there was a subscription (and a better music player) on last.fm, they'd win them all.
+
+*No more invitations*: the 5 last were sent to the "despotify.se project":http://despotify.se/ to help developers create an open-source spotify client.
