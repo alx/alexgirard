@@ -3,7 +3,7 @@ layout: post
 title: Interface for a new Electricity Panel
 ---
 
-Continuing my research to build a real-time powermeter, from the idea, to the hardware part, let's move and look what could be done on the interface site.
+Continuing my research to build a real-time powermeter, from "the idea":/2009/03/05/powermeter-more-info.html, to "the hardware part":/2009/03/02/edf-energy-saver-with-arduino.html, let's move and look what could be done on the interface site.
 
 Some people have already begun to build these interface, some others have dreamt about it, here is a small survey about some of them:
 
@@ -53,3 +53,5 @@ h2. "Tweet-a-Watt":http://twitter.com/tweetawatt
 !/images/elec-interface/tweetawatt.png!
 
 An experiement from "Adafruit":http://www.adafruit.com that connect LCD appliance, that count watts on a plug, to twitter, throwing a hook for anybody wh's got some idea about how to expand it with a social mean.
+
+On a sidenote, that's probably the hardware solution I'll use to have a remote access to the electricity counter in our flat.
