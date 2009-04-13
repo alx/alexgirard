@@ -1,0 +1,28 @@
+---
+layout: post
+title: Interface for a new Electricity Panel
+---
+
+Continuing my research to build a real-time powermeter, from the idea, to the hardware part, let's move and look what could be done on the interface site.
+
+Some people have already begun to build these interface, some others have dreamt about it, here is a small survey about some of them:
+
+* "Telefonica in Madrid":http://www.flickr.com/photos/alx/2679463771/
+
+!http://farm4.static.flickr.com/3120/2679463771_81ce8f8ac0.jpg!
+
+* "CurrentCost CC128":http://www.currentcost.com/product-cc128.html
+
+!/images/elec-interface/currentcost.png!
+
+* "Microsoft Sustainability":http://ohhello.tv/index.php/work/view/microsoft_sustainability/ by "Oh, Hello":http://ohhello.tv
+
+!/images/elec-interface/sustainability.png!
+
+* "HomeLinux":http://vesta.homelinux.net/mediawiki/index.php/Demodulateur_teleinformation_EDF interface
+
+!/images/elec-interface/homelinux.png!
+
+* "Tweet-a-Watt":http://twitter.com/tweetawatt
+
+!/images/elec-interface/tweetawatt.png!
