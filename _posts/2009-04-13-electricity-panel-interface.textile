@@ -7,22 +7,49 @@ Continuing my research to build a real-time powermeter, from the idea, to the ha
 
 Some people have already begun to build these interface, some others have dreamt about it, here is a small survey about some of them:
 
-* "Telefonica in Madrid":http://www.flickr.com/photos/alx/2679463771/
+h2. "Telefonica in Madrid":http://www.flickr.com/photos/alx/2679463771/
 
 !http://farm4.static.flickr.com/3120/2679463771_81ce8f8ac0.jpg!
 
-* "CurrentCost CC128":http://www.currentcost.com/product-cc128.html
+Telefonica has got a kind of Apple Store on Madrid biggest avenue (Gran Via).
+Apart from the whitish look, and the static electricity problem, it's got a domotic showroom with various technologies, from the tactil mirror that speak to you about the weather forecast, to the eye-toy TV to play with.
+
+A small corner is dedicated to this energy screen, you can set the light, open/close a windows blind, and follow the electricity cunsomption on this screen.
+
+The graph, that shows the KwH consumme each second, is not really clear at first look What it shows is 2 lines: bottom one is your consumption with "_Hogar Solucion_" merchandsing, showing you the difference with the top one that puts you in the red zone of "*you consumme too much!*".
+
+The rest of the interface is pretty clean, with big number you just need to follow by curiosity. The bad part is you need to read a manual to understand any of these numbers.
+
+h2. "CurrentCost CC128":http://www.currentcost.com/product-cc128.html
 
 !/images/elec-interface/currentcost.png!
 
-* "Microsoft Sustainability":http://ohhello.tv/index.php/work/view/microsoft_sustainability/ by "Oh, Hello":http://ohhello.tv
+That's the interface a harware piece you plug on your circuit to follow your consumption.
+
+Same here, it requires a manual, ad it's pretty messy. The designer probably got a clue by copying these popular weather stations.
+
+But there's something realy innovative in this design compare to the others: it's really cost effective, you don't need to have your computer or a Plasma screen switch on all the time, so you might feel like you reduce your energy consumption by this mean.
+
+h2. "Microsoft Sustainability":http://ohhello.tv/index.php/work/view/microsoft_sustainability/ by "Oh, Hello":http://ohhello.tv
 
 !/images/elec-interface/sustainability.png!
 
-* "HomeLinux":http://vesta.homelinux.net/mediawiki/index.php/Demodulateur_teleinformation_EDF interface
+I really invite you to watch the whole video, there're a lot of ideas and details on this futuristic interface research.
+
+This panel is interesting too, really clean, big numbers, comprehensive colors, and a lot of informations in one read.
+
+I'll need your help to understand the color gradients in the graph, and the model might not be appliable to my research: this example show a hybrid use of electricity, like in hybrid cars, switching from the solar panels to the national electricity grid.
+
+The house map is quite interesting to have an idea of which part of the house is consumming.
+
+h2. "HomeLinux":http://vesta.homelinux.net/mediawiki/index.php/Demodulateur_teleinformation_EDF interface
 
 !/images/elec-interface/homelinux.png!
 
-* "Tweet-a-Watt":http://twitter.com/tweetawatt
+The hacker view of energy consumption, sometimes that's all you need, and it can be done really quickly.
+
+h2. "Tweet-a-Watt":http://twitter.com/tweetawatt
 
 !/images/elec-interface/tweetawatt.png!
+
+An experiement from "Adafruit":http://www.adafruit.com that connect LCD appliance, that count watts on a plug, to twitter, throwing a hook for anybody wh's got some idea about how to expand it with a social mean.
