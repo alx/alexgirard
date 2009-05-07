@@ -1,0 +1,11 @@
+I've begin ready-read gist few weeks ago:
+
+http://
+
+And here I read that and couldn't learn more about ruby in the same post:
+
+http://gilesbowkett.blogspot.com/2009/05/archaeopteryx-recursive-lambda-weird.html
+
+Few links on how to lear about ruby
+
+=== find a way in jekyll to have a french part in same file ===

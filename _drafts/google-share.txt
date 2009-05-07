@@ -1,0 +1,13 @@
+RSS is not dead
+
+Google is killing dig.com with the share button on Google Reader
+
+Simple algo:
+
+- Shares from everybody -> score +1
+- Shares from friends	-> score +10
+
+digg-killer features:
+
+- button to score -1, affect FoF
+- button to hide your friends, keep it to yourself, don't offend them
