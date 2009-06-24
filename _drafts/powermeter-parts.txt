@@ -1,0 +1,21 @@
+I've just bought the powermeter parts from adafruit.com:
+
+Products
+------------------------------------------------------
+2 x XBee Adapter kit (v1.1)  = $20.00
+1 x 9V battery holder with switch & 2.1mm plug = $4.00
+1 x Half-size breadboard = $5.00
+2 x XBee Module (XB24-ACI-001)  = $46.00
+1 x USB TTL-232 cable (TTL-232R 3.3V)  = $20.00
+1 x USB Cable - Standard A-B - 3 ft/1 m = $4.00
+1 x Arduino w/Atmega328 (assembled) (Duemilanove w/Atmega328)  = $30.00
+1 x Adafruit GPS logger shield kit (v1.0)  = $19.50
+------------------------------------------------------
+Sub-Total: $148.50
+United States Postal Service (2.70lbs) (First Class Mail International Package): $22.85
+Shipment insurance: $3.20
+Total: $174.55
+
+I was hesitation with the SquidBee solution from Libelium.com, it offers great features too: compact, with 4 sensors, with a small box easy to fix. The bad point was the price and the connection from the SquidBee and the computer, I was missing another XBee.
+
+So now I've got 2 XBee that can communicate together, and the GPS Logger shield, that'll allow to store data on the arduino, without switching on a computer, and maybe synchronize it once a day (or once a week) to reduce to maximum the energy needed to operate the powermeter.
