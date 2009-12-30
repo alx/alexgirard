@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-jekyll && rsync -avz --delete _site/ peeloo:alexgirard.com/alexgirard.com
+jekyll && rsync -avz --delete --exclude=".*" _site/ peeloo@alexgirard.com:alexgirard.com
